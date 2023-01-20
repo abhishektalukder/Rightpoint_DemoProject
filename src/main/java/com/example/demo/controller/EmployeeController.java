@@ -26,7 +26,6 @@ public class EmployeeController {
     @Autowired
     private ModelMapper modelMapper;
 
-
     @PostMapping(path = "/createEmployee")
     @ResponseStatus( HttpStatus.CREATED )
     public void createEmployee(@RequestBody Employee employee){
